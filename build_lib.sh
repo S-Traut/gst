@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -x
 proj_root_dir=$(pwd)
 
 rm -rf ./gst/lib
@@ -14,12 +15,12 @@ flags=(
 
 # Include directories
 inc=(
-  -I $(proj_root_dir)/gst/third_party/include/
+  -I ${proj_root_dir}/gst/third_party/include/
 )
 
 # Source files
 src=(
-  $(proj_root_dir)/impl.c
+  ${proj_root_dir}/impl.c
 )
 
 # Build Library
