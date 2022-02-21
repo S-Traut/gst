@@ -18,7 +18,7 @@ inc=(
 
 # Source files
 src=(
-  ../impl.c
+  ../../impl.c
 )
 
 # Build Library
