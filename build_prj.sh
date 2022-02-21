@@ -35,3 +35,4 @@ libs=(
 gcc -O3 ${lib_dirs[*]} ${libs[*]} ${inc[*]} ${src[*]} ${flags[*]} -lm -o App
 
 cd ..
+./bin/App
