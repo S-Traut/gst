@@ -6,7 +6,7 @@ You can execute the following commands to create a new project:
 ```bash
 mkdir [project_name]
 cd [project_name]
-git clone git@github.com:S-Traut/gst.git --recursive
+git submodule add git@github.com:S-Traut/gst.git
 gst/init.sh
 gst/build_prj.sh
 ```
