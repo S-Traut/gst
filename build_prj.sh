@@ -2,11 +2,12 @@
 
 #!bin/sh
 
+proj_root_dir=$(pwd)
+
 rm -rf bin
 mkdir bin
 cd bin
 
-proj_root_dir=$(pwd)/../../
 
 flags=(
 	-std=gnu99 -Wl,--no-as-needed -ldl -lGL -lX11 -pthread -lXi -D_POSIX_C_SOURCE=199309L
@@ -14,16 +15,16 @@ flags=(
 
 # Include directories
 inc=(
-  -I ../third_party/include/
+  -I ../gst/third_party/include/
 )
 
 # Source files
 src=(
-    $(proj_root_dir)/src/main.c
+    ../src/main.c
 )
 
 lib_dirs=(
-    -L ../lib/
+    -L ../gst/lib/
 )
 
 libs=(

@@ -1,11 +1,12 @@
 #!/bin/bash
 
-rm -rf lib
-mkdir lib
-cd lib
+proj_root_dir=$(pwd)
+
+rm -rf ./gst/lib
+mkdir ./gst/lib
+cd ./gst/lib
 
 proj_name=gs
-proj_root_dir=$(pwd)/../../
 
 flags=(
 	-std=gnu99 -Wl,--no-as-needed -ldl -lGL -lX11 -pthread -lXi -D_POSIX_C_SOURCE=199309L
@@ -13,12 +14,12 @@ flags=(
 
 # Include directories
 inc=(
-    -I ../third_party/include/
+  -I $(proj_root_dir)/gst/third_party/include/
 )
 
 # Source files
 src=(
-  ../../impl.c
+  $(proj_root_dir)/impl.c
 )
 
 # Build Library
