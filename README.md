@@ -12,3 +12,7 @@ gst/build_prj.sh
 ```
 
 And you are ready to go!!
+
+## informations
+
+This template is mainly supposed to be used with a linux configuration, if you want a more versatile template use the official one https://github.com/MrFrenik/gs_project_template
