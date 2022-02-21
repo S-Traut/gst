@@ -8,6 +8,7 @@ mkdir ../src/
 mkdir ../bin/
 cp ./template/impl.c ../
 cp ./template/main.c ../src
+cp ./.ccls ../
 cd ..
 
 echo "Building static library..."
