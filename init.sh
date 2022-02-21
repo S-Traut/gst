@@ -1,10 +1,10 @@
 #!/usr/bin/sh
-
+cd gst
 echo "Initializing GST..."
 mkdir ../src/
 mkdir ../bin/
 mv ./template/impl.c ../
-mv ./tempalte/main.c ../src
+mv ./template/main.c ../src
 rm -rf ./template
 
 echo "Building static library..."
