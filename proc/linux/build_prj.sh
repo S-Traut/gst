@@ -6,7 +6,7 @@ rm -rf bin
 mkdir bin
 cd bin
 
-proj_root_dir=$(pwd)/../
+proj_root_dir=$(pwd)/../../
 
 flags=(
 	-std=gnu99 -Wl,--no-as-needed -ldl -lGL -lX11 -pthread -lXi -D_POSIX_C_SOURCE=199309L
@@ -19,7 +19,7 @@ inc=(
 
 # Source files
 src=(
-    ../src/main.c
+    $(proj_root_dir)/src/main.c
 )
 
 lib_dirs=(

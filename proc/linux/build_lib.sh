@@ -5,7 +5,7 @@ mkdir lib
 cd lib
 
 proj_name=gs
-proj_root_dir=$(pwd)/../
+proj_root_dir=$(pwd)/../../
 
 flags=(
 	-std=gnu99 -Wl,--no-as-needed -ldl -lGL -lX11 -pthread -lXi -D_POSIX_C_SOURCE=199309L
@@ -18,7 +18,7 @@ inc=(
 
 # Source files
 src=(
-    ../src/impl.c
+  ../impl.c
 )
 
 # Build Library
