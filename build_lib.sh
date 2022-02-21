@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -x
 proj_root_dir=$(pwd)
 
 rm -rf ./gst/lib

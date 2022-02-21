@@ -1,5 +1,8 @@
 #!/usr/bin/sh
 cd gst
+echo "Generating GS..."
+git submodule update --recursive --init
+
 echo "Initializing GST..."
 mkdir ../src/
 mkdir ../bin/
