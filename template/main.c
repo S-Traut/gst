@@ -1,11 +1,3 @@
-/*================================================================
-    * Copyright: 2020 John Jackson
-    * gs_static_lib
-    This example compiles gunslinger as a static library then
-    links it against the example program to run.
-    Press `esc` to exit the application.
-================================================================*/
-
 #include <gs/gs.h>
 
 void init() {}
