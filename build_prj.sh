@@ -32,7 +32,7 @@ libs=(
 )
 
 # Build
-gcc -O3 ${lib_dirs[*]} ${libs[*]} ${inc[*]} ${src[*]} ${flags[*]} -lm -o App
+gcc -g -O3 ${lib_dirs[*]} ${libs[*]} ${inc[*]} ${src[*]} ${flags[*]} -lm -o App
 
 cd ..
 ./bin/App

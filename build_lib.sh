@@ -23,7 +23,7 @@ src=(
 )
 
 # Build Library
-gcc -c -O3 ${flags[*]} ${inc[*]} ${src[*]} ${libs[*]}
+gcc -c -O3 -g ${flags[*]} ${inc[*]} ${src[*]} ${libs[*]}
 ar -rvs lib${proj_name}.a *o 
 ranlib lib${proj_name}.a
 rm *.o
